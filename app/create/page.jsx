@@ -18,7 +18,7 @@ export default function CreatePage() {
     
     // Simulate blockchain transaction
     setTimeout(() => {
-      alert('Gönderiniz başarıyla oluşturuldu! 🎉');
+      alert('Your post has been successfully created! 🎉');
       setPost('');
       setIsSubmitting(false);
     }, 2000);
@@ -30,13 +30,13 @@ export default function CreatePage() {
         <div className="container py-12">
           <div className="glass p-12 rounded-3xl text-center max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold text-white mb-6">
-              Cüzdanınızı Bağlayın
+              Connect Your Wallet
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Anonim gönderi oluşturmak için Freighter cüzdanınızı bağlayın
+              Connect your Freighter wallet to create anonymous posts
             </p>
             <Link href="/" className="btn-primary">
-              Ana Sayfaya Dön
+              Return to Home Page
             </Link>
           </div>
         </div>
@@ -59,19 +59,19 @@ export default function CreatePage() {
             
             <div className="flex items-center space-x-4">
               <Link href="/" className="text-white hover:text-blue-300 transition-colors">
-                🏠 Ana Sayfa
+                🏠 Home Page
               </Link>
               <Link href="/feed" className="text-white hover:text-blue-300 transition-colors">
-                📰 Akış
+                📰 Feed
               </Link>
               <Link href="/chats" className="text-white hover:text-blue-300 transition-colors">
-                💬 Sohbetler
+                💬 Chats
               </Link>
               <Link href="/settings" className="text-white hover:text-blue-300 transition-colors">
-                ⚙️ Ayarlar
+                ⚙️ Settings
               </Link>
               <div className="text-green-400 text-sm">
-                {publicKey ? `${publicKey.slice(0, 6)}...${publicKey.slice(-4)}` : 'Bağlı'}
+                {publicKey ? `${publicKey.slice(0, 6)}...${publicKey.slice(-4)}` : 'Connected'}
               </div>
             </div>
           </div>
@@ -82,10 +82,10 @@ export default function CreatePage() {
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
             <h1 className="text-4xl font-bold text-white mb-4">
-              ✨ Anonim Gönderi Oluştur
+              ✨ Create Anonymous Post
             </h1>
             <p className="text-gray-300 text-lg">
-              Düşüncelerinizi güvenle paylaşın, kimliğiniz gizli kalacak
+              Share your thoughts securely, your identity remains hidden
             </p>
           </div>
           
@@ -93,18 +93,18 @@ export default function CreatePage() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-white font-medium mb-3">
-                  Mesajınız
+                  Your Message
                 </label>
                 <textarea
                   value={post}
                   onChange={(e) => setPost(e.target.value)}
-                  placeholder="Düşüncelerinizi buraya yazın... (Anonim olarak paylaşılacak)"
+                  placeholder="Write your thoughts here... (Will be shared anonymously)"
                   className="w-full h-32 px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-400 transition-colors resize-none"
                   maxLength={500}
                 />
                 <div className="flex justify-between items-center mt-2">
                   <span className="text-gray-400 text-sm">
-                    {post.length}/500 karakter
+                    {post.length}/500 characters
                   </span>
                   <div className="flex items-center space-x-2">
                     <input
@@ -115,7 +115,7 @@ export default function CreatePage() {
                       className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
                     />
                     <label htmlFor="anonymous" className="text-gray-300 text-sm">
-                      Anonim olarak paylaş
+                      Share anonymously
                     </label>
                   </div>
                 </div>
@@ -125,10 +125,10 @@ export default function CreatePage() {
                 <div className="flex items-start space-x-3">
                   <div className="text-blue-400 text-xl">🔒</div>
                   <div>
-                    <h3 className="text-blue-400 font-medium mb-1">Güvenlik Garantisi</h3>
+                    <h3 className="text-blue-400 font-medium mb-1">Security Guarantee</h3>
                     <p className="text-gray-300 text-sm">
-                      Gönderiniz Stellar blockchain üzerinde şifrelenmiş olarak saklanır. 
-                      Kimliğiniz tamamen gizli kalır.
+                      Your post is stored encrypted on the Stellar blockchain. 
+                      Your identity remains completely hidden.
                     </p>
                   </div>
                 </div>
@@ -143,15 +143,15 @@ export default function CreatePage() {
                   {isSubmitting ? (
                     <div className="flex items-center justify-center">
                       <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>
-                      Blockchain'e Kaydediliyor...
+                      Recording to Blockchain...
                     </div>
                   ) : (
-                    '🚀 Gönderiyi Paylaş'
+                    '🚀 Share Post'
                   )}
                 </button>
                 
                 <Link href="/feed" className="bg-white/10 hover:bg-white/20 text-white font-medium py-3 px-6 rounded-lg border border-white/20 transition-all">
-                  İptal
+                  Cancel
                 </Link>
               </div>
             </form>
@@ -160,24 +160,24 @@ export default function CreatePage() {
           <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10">
               <div className="text-2xl mb-2">🔐</div>
-              <h3 className="text-white font-medium mb-1">Tam Gizlilik</h3>
-              <p className="text-gray-300 text-sm">Kimliğiniz asla açıklanmaz</p>
+              <h3 className="text-white font-medium mb-1">Complete Privacy</h3>
+              <p className="text-gray-300 text-sm">Your identity is never revealed</p>
             </div>
             
             <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10">
               <div className="text-2xl mb-2">⚡</div>
-              <h3 className="text-white font-medium mb-1">Hızlı İşlem</h3>
-              <p className="text-gray-300 text-sm">Stellar blockchain üzerinde anında</p>
+              <h3 className="text-white font-medium mb-1">Fast Transaction</h3>
+              <p className="text-gray-300 text-sm">Instant on Stellar blockchain</p>
             </div>
             
             <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10">
               <div className="text-2xl mb-2">🛡️</div>
-              <h3 className="text-white font-medium mb-1">Güvenli</h3>
-              <p className="text-gray-300 text-sm">Şifrelenmiş ve güvenli</p>
+              <h3 className="text-white font-medium mb-1">Secure</h3>
+              <p className="text-gray-300 text-sm">Encrypted and secure</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-} 
+}
