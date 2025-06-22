@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AnonMatch - Web3 Anonymous Matching Platform
 
 A full-stack Web3 anonymous matching platform built with React, Tailwind CSS, JavaScript, and Soroban smart contracts on the Stellar blockchain. The platform features Freighter wallet integration, optional WebAuthn passkey authentication, user profile creation stored on-chain, anonymous posting, anonymous messaging with mutual consent reveal, and premium matching features.
@@ -212,3 +213,6 @@ For support and questions:
 ---
 
 **Built with ❤️ on the Stellar blockchain** 
+=======
+# AnonMatch
+>>>>>>> 2903a5d6b2d152b19e6f3bbe77b8ce5f570e3f46
