@@ -1,3 +1,4 @@
+```jsx
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -43,81 +44,81 @@ export default function ChatsPage() {
     1: {
       name: "CryptoExplorer",
       avatar: "🚀",
-      personality: "Teknoloji meraklısı, blockchain tutkunu",
-      interests: ["Kripto", "DeFi", "NFT"],
+      personality: "Tech enthusiast, blockchain lover",
+      interests: ["Crypto", "DeFi", "NFT"],
       age: "25-30",
-      location: "İstanbul",
-      bio: "Blockchain teknolojisinin geleceğini şekillendiren biriyim. DeFi projeleri ve NFT dünyası benim tutkum.",
+      location: "Istanbul",
+      bio: "I'm shaping the future of blockchain technology. DeFi projects and the NFT world are my passion.",
       responses: [
-        "Merhaba! DeFi protokolleri hakkında konuşmak ister misin?",
-        "Hangi blockchain projeleri ilgini çekiyor?",
-        "NFT'ler hakkında ne düşünüyorsun?",
-        "Yield farming stratejileri denedin mi hiç?",
-        "Hangi kripto para birimlerine yatırım yapıyorsun?"
+        "Hello! Want to talk about DeFi protocols?",
+        "Which blockchain projects interest you?",
+        "What do you think about NFTs?",
+        "Have you ever tried yield farming strategies?",
+        "Which cryptocurrencies are you investing in?"
       ]
     },
     2: {
       name: "DigitalNomad",
       avatar: "🌍",
-      personality: "Seyahat tutkunu, dijital göçebe",
-      interests: ["Seyahat", "Uzaktan çalışma", "Kültür"],
+      personality: "Travel enthusiast, digital nomad",
+      interests: ["Travel", "Remote work", "Culture"],
       age: "28-35",
-      location: "Dünya çapında",
-      bio: "Laptopum ve internet bağlantım ile dünyayı dolaşıyorum. Farklı kültürler ve insanlarla tanışmak en büyük tutkum.",
+      location: "Worldwide",
+      bio: "I travel the world with my laptop and internet connection. Meeting different cultures and people is my greatest passion.",
       responses: [
-        "Merhaba! Şu anda nerede yaşıyorsun?",
-        "Seyahat etmeyi seviyor musun?",
-        "Uzaktan çalışma deneyimin var mı?",
-        "Hangi ülkeleri ziyaret ettin?",
-        "Farklı kültürler hakkında ne düşünüyorsun?"
+        "Hello! Where are you living right now?",
+        "Do you love to travel?",
+        "Do you have any remote work experience?",
+        "Which countries have you visited?",
+        "What do you think about different cultures?"
       ]
     },
     3: {
       name: "CreativeSoul",
       avatar: "🎨",
-      personality: "Yaratıcı ruh, sanatçı",
-      interests: ["Sanat", "Müzik", "Yaratıcılık"],
+      personality: "Creative spirit, artist",
+      interests: ["Art", "Music", "Creativity"],
       age: "22-28",
-      location: "İzmir",
-      bio: "Renkler ve notalarla yaşıyorum. Dijital sanat ve geleneksel sanatı birleştiren projeler üretiyorum.",
+      location: "Izmir",
+      bio: "I live with colors and notes. I create projects combining digital and traditional art.",
       responses: [
-        "Merhaba! Sanatla ilgileniyor musun?",
-        "Hangi tür müzik dinliyorsun?",
-        "Yaratıcı projeler üzerinde çalışıyor musun?",
-        "Dijital sanat hakkında ne düşünüyorsun?",
-        "Hangi sanatçıları takip ediyorsun?"
+        "Hello! Are you into art?",
+        "What kind of music do you listen to?",
+        "Are you working on any creative projects?",
+        "What do you think about digital art?",
+        "Which artists do you follow?"
       ]
     },
     4: {
       name: "TechGuru",
       avatar: "💻",
-      personality: "Teknoloji uzmanı, mentor",
-      interests: ["Yazılım", "AI", "Startup"],
+      personality: "Tech expert, mentor",
+      interests: ["Software", "AI", "Startup"],
       age: "30-40",
       location: "Ankara",
-      bio: "10+ yıllık yazılım deneyimi ile startup'lara mentorluk yapıyorum. AI ve blockchain teknolojilerinin geleceğine inanıyorum.",
+      bio: "With over 10 years of software experience, I mentor startups. I believe in the future of AI and blockchain technologies.",
       responses: [
-        "Merhaba! Yazılım geliştirme ile ilgileniyor musun?",
-        "Hangi programlama dillerini biliyorsun?",
-        "AI teknolojileri hakkında ne düşünüyorsun?",
-        "Startup dünyası ilgini çekiyor mu?",
-        "Hangi teknoloji trendlerini takip ediyorsun?"
+        "Hello! Are you into software development?",
+        "Which programming languages do you know?",
+        "What do you think about AI technologies?",
+        "Are you interested in the startup world?",
+        "Which technology trends are you following?"
       ]
     },
     5: {
       name: "MindfulMeditator",
       avatar: "🧘",
-      personality: "Farkındalık tutkunu, meditasyon eğitmeni",
-      interests: ["Meditasyon", "Yoga", "Kişisel gelişim"],
+      personality: "Mindfulness enthusiast, meditation instructor",
+      interests: ["Meditation", "Yoga", "Personal development"],
       age: "35-45",
       location: "Antalya",
-      bio: "Dijital dünyada farkındalığı korumaya çalışan biriyim. Teknoloji ve mindfulness'ı dengelemek mümkün.",
+      bio: "I strive to maintain mindfulness in the digital world. Balancing technology and mindfulness is possible.",
       responses: [
-        "Merhaba! Meditasyon yapıyor musun?",
-        "Günlük rutinin nasıl?",
-        "Mindfulness hakkında ne düşünüyorsun?",
-        "Yoga ile ilgileniyor musun?",
-        "Kişisel gelişim için ne yapıyorsun?"
+        "Hello! Do you meditate?",
+        "What's your daily routine like?",
+        "What do you think about mindfulness?",
+        "Are you into yoga?",
+        "What do you do for personal development?"
       ]
     }
   };
@@ -167,8 +168,8 @@ export default function ChatsPage() {
         const chatData = {
           id: character.id,
           name: character.name,
-          lastMessage: "Merhaba! Nasılsın?",
-          timestamp: "Şimdi",
+          lastMessage: "Hello! How are you?",
+          timestamp: "Now",
           unread: 1,
           avatar: character.avatar,
           personality: character.personality,
@@ -215,25 +216,25 @@ export default function ChatsPage() {
         setChats([
           {
             id: 1,
-            name: "Anonim Kullanıcı #1",
-            lastMessage: "Merhaba! Nasılsın?",
-            timestamp: "2 dakika önce",
+            name: "Anonymous User #1",
+            lastMessage: "Hello! How are you?",
+            timestamp: "2 minutes ago",
             unread: 1,
             avatar: "👤"
           },
           {
             id: 2,
-            name: "Anonim Kullanıcı #2",
-            lastMessage: "Bu platform gerçekten harika!",
-            timestamp: "1 saat önce",
+            name: "Anonymous User #2",
+            lastMessage: "This platform is really awesome!",
+            timestamp: "1 hour ago",
             unread: 0,
             avatar: "👤"
           },
           {
             id: 3,
-            name: "Anonim Kullanıcı #3",
-            lastMessage: "Blockchain teknolojisi hakkında ne düşünüyorsun?",
-            timestamp: "3 saat önce",
+            name: "Anonymous User #3",
+            lastMessage: "What do you think about blockchain technology?",
+            timestamp: "3 hours ago",
             unread: 2,
             avatar: "👤"
           }
@@ -265,7 +266,7 @@ export default function ChatsPage() {
 
   const handleSendMessage = async () => {
     if (!newMessage.trim() || !selectedChat || !sessionKey) {
-      alert('Mesaj gönderilemedi. Şifreleme hazır değil.');
+      alert('Message could not be sent. Encryption is not ready.');
       return;
     }
 
@@ -278,7 +279,7 @@ export default function ChatsPage() {
         id: Date.now(),
         content: encryptedMessage,
         sender: 'user',
-        timestamp: new Date().toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' }),
+        timestamp: new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }),
         encrypted: true
       };
       
@@ -289,7 +290,7 @@ export default function ChatsPage() {
       setTimeout(async () => {
         const botResponse = selectedChat.responses ? 
           selectedChat.responses[Math.floor(Math.random() * selectedChat.responses.length)] : 
-          "Teşekkürler! Güzel bir sohbet oldu.";
+          "Thanks! That was a great chat.";
         
         // Encrypt bot response
         const encryptedBotResponse = await encryptWithSessionKey(botResponse, sessionKey);
@@ -298,7 +299,7 @@ export default function ChatsPage() {
           id: Date.now() + 1,
           content: encryptedBotResponse,
           sender: 'bot',
-          timestamp: new Date().toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' }),
+          timestamp: new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }),
           encrypted: true
         };
         
@@ -313,13 +314,13 @@ export default function ChatsPage() {
       }
     } catch (error) {
       console.error('Error sending message:', error);
-      alert('Mesaj gönderilemedi. Şifreleme hatası.');
+      alert('Message could not be sent. Encryption error.');
     }
   };
 
   const handleUserApprove = async () => {
     if (!contractId || !publicKey) {
-      alert('Cüzdan bağlantısı gerekli!');
+      alert('Wallet connection required!');
       return;
     }
 
@@ -340,7 +341,7 @@ export default function ChatsPage() {
       }
     } catch (error) {
       console.error('Error executing contract:', error);
-      alert('Smart contract işlemi başarısız oldu. Lütfen tekrar deneyin.');
+      alert('Smart contract execution failed. Please try again.');
       setContractStatus('bot_approved');
       setUserApproved(false);
     }
@@ -348,7 +349,7 @@ export default function ChatsPage() {
 
   const handleUserReject = () => {
     setShowDataSharing(false);
-    alert('Veri paylaşımı reddedildi. Sohbet anonim kalacak.');
+    alert('Data sharing rejected. The chat will remain anonymous.');
   };
 
   if (!isConnected) {
@@ -357,13 +358,13 @@ export default function ChatsPage() {
         <div className="container py-12">
           <div className="glass p-12 rounded-3xl text-center max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold text-white mb-6">
-              Cüzdanınızı Bağlayın
+              Connect Your Wallet
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Anonim sohbetlere katılmak için Freighter cüzdanınızı bağlayın
+              Connect your Freighter wallet to join anonymous chats
             </p>
             <Link href="/" className="btn-primary">
-              Ana Sayfaya Dön
+              Return to Home Page
             </Link>
           </div>
         </div>
@@ -386,19 +387,19 @@ export default function ChatsPage() {
             
             <div className="flex items-center space-x-4">
               <Link href="/" className="text-white hover:text-blue-300 transition-colors">
-                🏠 Ana Sayfa
+                🏠 Home Page
               </Link>
               <Link href="/feed" className="text-white hover:text-blue-300 transition-colors">
-                📰 Akış
+                📰 Feed
               </Link>
               <Link href="/create" className="text-white hover:text-blue-300 transition-colors">
-                ✨ Oluştur
+                ✨ Create
               </Link>
               <Link href="/settings" className="text-white hover:text-blue-300 transition-colors">
-                ⚙️ Ayarlar
+                ⚙️ Settings
               </Link>
               <div className="text-green-400 text-sm">
-                {publicKey ? `${publicKey.slice(0, 6)}...${publicKey.slice(-4)}` : 'Bağlı'}
+                {publicKey ? `${publicKey.slice(0, 6)}...${publicKey.slice(-4)}` : 'Connected'}
               </div>
             </div>
           </div>
@@ -409,26 +410,26 @@ export default function ChatsPage() {
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-between items-center mb-8">
             <h1 className="text-4xl font-bold text-white">
-              💬 Anonim Sohbetler
+              💬 Anonymous Chats
             </h1>
             <div className="flex items-center space-x-4">
               {encryptionStatus === 'ready' && (
                 <div className="text-green-400 text-sm bg-green-400/10 px-3 py-2 rounded-lg">
-                  🔐 Şifreleme Aktif
+                  🔐 Encryption Active
                 </div>
               )}
               {encryptionStatus === 'initializing' && (
                 <div className="text-yellow-400 text-sm bg-yellow-400/10 px-3 py-2 rounded-lg">
-                  🔐 Şifreleme Hazırlanıyor...
+                  🔐 Encryption Preparing...
                 </div>
               )}
               {encryptionStatus === 'error' && (
                 <div className="text-red-400 text-sm bg-red-400/10 px-3 py-2 rounded-lg">
-                  ❌ Şifreleme Hatası
+                  ❌ Encryption Error
                 </div>
               )}
               <Link href="/feed" className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-all">
-                🎯 Yeni Eşleşme
+                🎯 New Match
               </Link>
             </div>
           </div>
@@ -436,7 +437,7 @@ export default function ChatsPage() {
           {loading ? (
             <div className="flex justify-center items-center py-20">
               <div className="loading-spinner"></div>
-              <span className="text-white ml-4">Sohbetler yükleniyor...</span>
+              <span className="text-white ml-4">Loading chats...</span>
             </div>
           ) : (
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -444,7 +445,7 @@ export default function ChatsPage() {
               <div className="lg:col-span-1">
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
                   <div className="p-4 border-b border-white/10">
-                    <h2 className="text-white font-semibold">Aktif Sohbetler</h2>
+                    <h2 className="text-white font-semibold">Active Chats</h2>
                   </div>
                   
                   <div className="max-h-96 overflow-y-auto">
@@ -499,7 +500,7 @@ export default function ChatsPage() {
                             <h3 className="text-white font-semibold">{selectedChat.name}</h3>
                             <div className="flex items-center space-x-2">
                               <p className="text-gray-400 text-sm">
-                                {contractStatus === 'shared' ? '🔓 Veri Paylaşıldı' : '🔒 Şifrelenmiş'}
+                                {contractStatus === 'shared' ? '🔓 Data Shared' : '🔒 Encrypted'}
                               </p>
                               {encryptionStatus === 'ready' && (
                                 <span className="text-green-400 text-xs">🔐 E2E</span>
@@ -508,7 +509,7 @@ export default function ChatsPage() {
                           </div>
                           {contractStatus === 'bot_approved' && (
                             <div className="text-green-400 text-sm">
-                              ✅ Bot Onayladı
+                              ✅ Bot Approved
                             </div>
                           )}
                           {contractId && (
@@ -522,10 +523,10 @@ export default function ChatsPage() {
                       {/* Messages */}
                       <div className="h-64 overflow-y-auto p-4 space-y-4">
                         <div className="text-center text-gray-400 text-sm py-4">
-                          <p>🔒 Bu sohbet uçtan uca şifrelenmiştir</p>
-                          <p>Kimlikler gizli tutulur</p>
+                          <p>🔒 This chat is end-to-end encrypted</p>
+                          <p>Identities remain hidden</p>
                           {encryptionStatus === 'ready' && (
-                            <p className="text-green-400 mt-1">AES-256-GCM şifreleme aktif</p>
+                            <p className="text-green-400 mt-1">AES-256-GCM encryption active</p>
                           )}
                         </div>
                         
@@ -537,7 +538,7 @@ export default function ChatsPage() {
                                 : 'bg-white/10 text-white'
                             }`}>
                               <p className="text-sm">
-                                {message.encrypted ? '🔐 [Şifrelenmiş Mesaj]' : message.content}
+                                {message.encrypted ? '🔐 [Encrypted Message]' : message.content}
                               </p>
                               <p className={`text-xs mt-1 ${
                                 message.sender === 'user' ? 'text-blue-200' : 'text-gray-400'
@@ -550,21 +551,21 @@ export default function ChatsPage() {
 
                         {contractStatus === 'shared' && sharedData && (
                           <div className="bg-green-500/20 border border-green-500/30 rounded-lg p-4">
-                            <h4 className="text-green-400 font-semibold mb-2">🔓 Veri Paylaşıldı</h4>
+                            <h4 className="text-green-400 font-semibold mb-2">🔓 Data Shared</h4>
                             <div className="text-white text-sm space-y-2">
                               <div>
-                                <h5 className="font-semibold text-green-300">Bot Bilgileri:</h5>
-                                <p><strong>Yaş:</strong> {sharedData.botData.age}</p>
-                                <p><strong>Konum:</strong> {sharedData.botData.location}</p>
-                                <p><strong>İlgi Alanları:</strong> {sharedData.botData.interests.join(', ')}</p>
-                                <p><strong>Hakkında:</strong> {sharedData.botData.bio}</p>
+                                <h5 className="font-semibold text-green-300">Bot Information:</h5>
+                                <p><strong>Age:</strong> {sharedData.botData.age}</p>
+                                <p><strong>Location:</strong> {sharedData.botData.location}</p>
+                                <p><strong>Interests:</strong> {sharedData.botData.interests.join(', ')}</p>
+                                <p><strong>Bio:</strong> {sharedData.botData.bio}</p>
                               </div>
                               <div>
-                                <h5 className="font-semibold text-blue-300">Sizin Bilgileriniz:</h5>
-                                <p><strong>Yaş:</strong> {sharedData.userData.age}</p>
-                                <p><strong>Konum:</strong> {sharedData.userData.location}</p>
-                                <p><strong>İlgi Alanları:</strong> {sharedData.userData.interests.join(', ')}</p>
-                                <p><strong>Hakkında:</strong> {sharedData.userData.bio}</p>
+                                <h5 className="font-semibold text-blue-300">Your Information:</h5>
+                                <p><strong>Age:</strong> {sharedData.userData.age}</p>
+                                <p><strong>Location:</strong> {sharedData.userData.location}</p>
+                                <p><strong>Interests:</strong> {sharedData.userData.interests.join(', ')}</p>
+                                <p><strong>Bio:</strong> {sharedData.userData.bio}</p>
                               </div>
                             </div>
                           </div>
@@ -579,7 +580,7 @@ export default function ChatsPage() {
                             value={newMessage}
                             onChange={(e) => setNewMessage(e.target.value)}
                             onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
-                            placeholder={encryptionStatus === 'ready' ? "Şifrelenmiş mesajınızı yazın..." : "Şifreleme hazırlanıyor..."}
+                            placeholder={encryptionStatus === 'ready' ? "Write your encrypted message..." : "Encryption preparing..."}
                             disabled={encryptionStatus !== 'ready'}
                             className="flex-1 bg-white/10 text-white rounded-lg px-4 py-2 border border-white/20 focus:border-blue-500 focus:outline-none disabled:opacity-50"
                           />
@@ -588,7 +589,7 @@ export default function ChatsPage() {
                             disabled={encryptionStatus !== 'ready' || !newMessage.trim()}
                             className="bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 text-white px-4 py-2 rounded-lg transition-colors"
                           >
-                            Gönder
+                            Send
                           </button>
                         </div>
                       </div>
@@ -596,8 +597,8 @@ export default function ChatsPage() {
                   ) : (
                     <div className="flex items-center justify-center h-full">
                       <div className="text-center text-gray-400">
-                        <p className="text-xl mb-2">Sohbet seçin</p>
-                        <p>Mesajlaşmak istediğiniz kişiyi seçin</p>
+                        <p className="text-xl mb-2">Select a chat</p>
+                        <p>Choose the person you want to message</p>
                       </div>
                     </div>
                   )}
@@ -614,19 +615,19 @@ export default function ChatsPage() {
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-md mx-4 border border-white/20">
             <div className="text-center">
               <div className="text-4xl mb-4">🤝</div>
-              <h3 className="text-white text-xl font-bold mb-4">Veri Paylaşım Anlaşması</h3>
+              <h3 className="text-white text-xl font-bold mb-4">Data Sharing Agreement</h3>
               
               <div className="text-gray-300 text-sm mb-6 space-y-2">
-                <p>Bot otomatik olarak anlaşmayı onayladı.</p>
-                <p>Onaylarsanız karşılıklı olarak:</p>
+                <p>The bot has automatically approved the agreement.</p>
+                <p>If you approve, the following will be shared mutually:</p>
                 <ul className="text-left list-disc list-inside space-y-1">
-                  <li>Yaş bilgisi</li>
-                  <li>Konum bilgisi</li>
-                  <li>İlgi alanları</li>
-                  <li>Kişisel bio</li>
+                  <li>Age information</li>
+                  <li>Location information</li>
+                  <li>Interests</li>
+                  <li>Personal bio</li>
                 </ul>
                 <p className="text-yellow-400 mt-4">
-                  Bu işlem blockchain üzerinde geri alınamaz!
+                  This action is irreversible on the blockchain!
                 </p>
                 {contractId && (
                   <p className="text-blue-400 text-xs mt-2">
@@ -640,13 +641,13 @@ export default function ChatsPage() {
                   onClick={handleUserReject}
                   className="flex-1 bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-lg transition-colors"
                 >
-                  Reddet
+                  Reject
                 </button>
                 <button
                   onClick={handleUserApprove}
                   className="flex-1 bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg transition-colors"
                 >
-                  Onayla
+                  Approve
                 </button>
               </div>
             </div>
@@ -659,9 +660,9 @@ export default function ChatsPage() {
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-md mx-4 border border-white/20 text-center">
             <div className="text-4xl mb-4">⚡</div>
-            <h3 className="text-white text-xl font-bold mb-4">Smart Contract İşleniyor</h3>
+            <h3 className="text-white text-xl font-bold mb-4">Smart Contract Processing</h3>
             <div className="loading-spinner mx-auto mb-4"></div>
-            <p className="text-gray-300">Veri paylaşım anlaşması blockchain üzerinde işleniyor...</p>
+            <p className="text-gray-300">Data sharing agreement is being processed on the blockchain...</p>
             {contractId && (
               <p className="text-blue-400 text-xs mt-2">
                 Contract: {contractId}
@@ -672,4 +673,5 @@ export default function ChatsPage() {
       )}
     </div>
   );
-} 
+}
+```
