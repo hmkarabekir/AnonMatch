@@ -1,0 +1,30 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "A full-stack Web3 anonymous matching platform built with React, Tailwind CSS, JavaScript, and Soroban smart contracts on the Stellar blockchain. The platform features Freighter wallet integration, optional WebAuthn passkey authentication, user profile creation stored on-chain, anonymous posting, anonymous messaging with mutual consent reveal, and premium matching features.",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@stellar/freighter-api": "^4.1.0",
+    "@stellar/stellar-sdk": "^13.3.0",
+    "autoprefixer": "^10.4.21",
+    "next": "^15.3.4",
+    "postcss": "^8.5.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.17",
+    "zustand": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "24.0.3",
+    "typescript": "5.8.3"
+  }
+}
