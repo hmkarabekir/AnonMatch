@@ -1,3 +1,4 @@
+```jsx
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -13,71 +14,71 @@ export default function FeedPage() {
   const anonymousPosts = [
     {
       id: 1,
-      content: "Bugün yeni bir DeFi protokolü keşfettim! Yield farming stratejileri gerçekten çok ilginç. Kimler bu konuda deneyim paylaşmak ister?",
-      timestamp: "2 saat önce",
+      content: "Today I discovered a new DeFi protocol! Yield farming strategies are really interesting. Who wants to share their experiences on this?",
+      timestamp: "2 hours ago",
       upvotes: 15,
       downvotes: 2
     },
     {
       id: 2,
-      content: "NFT sanat dünyası inanılmaz! Bir sanatçının dijital eserini satın aldım ve şimdi onunla sohbet edebiliyorum. Bu teknoloji gerçekten devrim niteliğinde.",
-      timestamp: "1 gün önce",
+      content: "The NFT art world is incredible! I bought a digital artwork from an artist and now I can chat with them. This technology is truly revolutionary.",
+      timestamp: "1 day ago",
       upvotes: 23,
       downvotes: 1
     },
     {
       id: 3,
-      content: "Bali'de bir kafede çalışırken bu platformu keşfettim. Anonim olarak dünyanın her yerinden insanlarla sohbet edebilmek harika!",
-      timestamp: "4 saat önce",
+      content: "I discovered this platform while working at a cafe in Bali. Being able to chat anonymously with people from all over the world is amazing!",
+      timestamp: "4 hours ago",
       upvotes: 31,
       downvotes: 3
     },
     {
       id: 4,
-      content: "Portekiz'deki bu güzel sahil kasabasında blockchain topluluğu ile tanıştım. Teknoloji gerçekten sınırları kaldırıyor.",
-      timestamp: "2 gün önce",
+      content: "I met a blockchain community in this beautiful coastal town in Portugal. Technology really removes borders.",
+      timestamp: "2 days ago",
       upvotes: 18,
       downvotes: 0
     },
     {
       id: 5,
-      content: "Yeni bir dijital sanat serisi üzerinde çalışıyorum. Blockchain üzerinde sanat eserlerini paylaşmak ve satmak gerçekten özgürleştirici.",
-      timestamp: "6 saat önce",
+      content: "I'm working on a new digital art series. Sharing and selling artworks on the blockchain is truly liberating.",
+      timestamp: "6 hours ago",
       upvotes: 42,
       downvotes: 1
     },
     {
       id: 6,
-      content: "Bu anonim platform sayesinde sanatımı kimlik gizli kalarak paylaşabiliyorum. Gerçekten samimi geri bildirimler alıyorum.",
-      timestamp: "3 gün önce",
+      content: "Thanks to this anonymous platform, I can share my art while keeping my identity hidden. I get really genuine feedback.",
+      timestamp: "3 days ago",
       upvotes: 27,
       downvotes: 2
     },
     {
       id: 7,
-      content: "Yapay zeka ve blockchain'in kesişim noktasında çok ilginç projeler görüyorum. Bu teknolojiler birlikte kullanıldığında inanılmaz potansiyel var.",
-      timestamp: "8 saat önce",
+      content: "I'm seeing very interesting projects at the intersection of AI and blockchain. There's incredible potential when these technologies are used together.",
+      timestamp: "8 hours ago",
       upvotes: 35,
       downvotes: 4
     },
     {
       id: 8,
-      content: "Genç girişimcilere tavsiyem: Önce problemi çözün, sonra teknolojiyi seçin. Blockchain her çözüm için gerekli değil.",
-      timestamp: "5 gün önce",
+      content: "My advice to young entrepreneurs: Solve the problem first, then choose the technology. Blockchain isn't necessary for every solution.",
+      timestamp: "5 days ago",
       upvotes: 29,
       downvotes: 1
     },
     {
       id: 9,
-      content: "Bu anonim platform sayesinde gerçek benliğimle iletişim kurabiliyorum. Kimlik gizli kalınca daha samimi olabiliyoruz.",
-      timestamp: "12 saat önce",
+      content: "Thanks to this anonymous platform, I can communicate as my true self. We can be more genuine when our identity is hidden.",
+      timestamp: "12 hours ago",
       upvotes: 19,
       downvotes: 0
     },
     {
       id: 10,
-      content: "Dijital detoks yaparken bile bu platformu kullanabiliyorum. Anonim sohbetler gerçekten ruh sağlığımı korumama yardımcı oluyor.",
-      timestamp: "1 hafta önce",
+      content: "I can use this platform even during a digital detox. Anonymous chats really help me maintain my mental health.",
+      timestamp: "1 week ago",
       upvotes: 33,
       downvotes: 2
     }
@@ -88,12 +89,12 @@ export default function FeedPage() {
     setTimeout(() => {
       // Sort by timestamp (newest first)
       const sortedPosts = [...anonymousPosts].sort((a, b) => {
-        const timeA = a.timestamp.includes('saat') ? parseInt(a.timestamp) : 
-                     a.timestamp.includes('gün') ? parseInt(a.timestamp) * 24 : 
-                     a.timestamp.includes('hafta') ? parseInt(a.timestamp) * 168 : 0;
-        const timeB = b.timestamp.includes('saat') ? parseInt(b.timestamp) : 
-                     b.timestamp.includes('gün') ? parseInt(b.timestamp) * 24 : 
-                     b.timestamp.includes('hafta') ? parseInt(b.timestamp) * 168 : 0;
+        const timeA = a.timestamp.includes('hour') ? parseInt(a.timestamp) : 
+                     a.timestamp.includes('day') ? parseInt(a.timestamp) * 24 : 
+                     a.timestamp.includes('week') ? parseInt(a.timestamp) * 168 : 0;
+        const timeB = b.timestamp.includes('hour') ? parseInt(b.timestamp) : 
+                     b.timestamp.includes('day') ? parseInt(b.timestamp) * 24 : 
+                     b.timestamp.includes('week') ? parseInt(b.timestamp) * 168 : 0;
         return timeA - timeB;
       });
       
@@ -104,7 +105,7 @@ export default function FeedPage() {
 
   const handleUpvote = (postId) => {
     if (!isConnected) {
-      alert('Oy vermek için cüzdanınızı bağlayın!');
+      alert('Connect your wallet to vote!');
       return;
     }
     setPosts(posts.map(post => 
@@ -116,7 +117,7 @@ export default function FeedPage() {
 
   const handleDownvote = (postId) => {
     if (!isConnected) {
-      alert('Oy vermek için cüzdanınızı bağlayın!');
+      alert('Connect your wallet to vote!');
       return;
     }
     setPosts(posts.map(post => 
@@ -128,7 +129,7 @@ export default function FeedPage() {
 
   const handleMessage = (postId) => {
     if (!isConnected) {
-      alert('Mesaj göndermek için cüzdanınızı bağlayın!');
+      alert('Connect your wallet to send a message!');
       return;
     }
     // Navigate to chats with anonymous post info
@@ -151,19 +152,19 @@ export default function FeedPage() {
             
             <div className="flex items-center space-x-4">
               <Link href="/" className="text-white hover:text-blue-300 transition-colors">
-                🏠 Ana Sayfa
+                🏠 Home Page
               </Link>
               <Link href="/create" className="text-white hover:text-blue-300 transition-colors">
-                ✨ Oluştur
+                ✨ Create
               </Link>
               <Link href="/chats" className="text-white hover:text-blue-300 transition-colors">
-                💬 Sohbetler
+                💬 Chats
               </Link>
               <Link href="/settings" className="text-white hover:text-blue-300 transition-colors">
-                ⚙️ Ayarlar
+                ⚙️ Settings
               </Link>
               <div className={`text-sm ${isConnected ? 'text-green-400' : 'text-red-400'}`}>
-                {isConnected ? (publicKey ? `${publicKey.slice(0, 6)}...${publicKey.slice(-4)}` : 'Bağlı') : 'Bağlı Değil'}
+                {isConnected ? (publicKey ? `${publicKey.slice(0, 6)}...${publicKey.slice(-4)}` : 'Connected') : 'Not Connected'}
               </div>
             </div>
           </div>
@@ -173,16 +174,16 @@ export default function FeedPage() {
       <div className="container py-12">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-4xl font-bold text-white">
-            📰 Anonim Akış
+            📰 Anonymous Feed
           </h1>
           <div className="flex items-center space-x-4">
             {!isConnected && (
               <div className="text-yellow-400 text-sm bg-yellow-400/10 px-3 py-2 rounded-lg">
-                ⚠️ Bazı özellikler için cüzdan bağlantısı gerekli
+                ⚠️ Wallet connection required for some features
               </div>
             )}
             <Link href="/create" className={`btn-primary ${!isConnected ? 'opacity-50 cursor-not-allowed' : ''}`}>
-              ✨ Yeni Gönderi
+              ✨ New Post
             </Link>
           </div>
         </div>
@@ -190,7 +191,7 @@ export default function FeedPage() {
         {loading ? (
           <div className="flex justify-center items-center py-20">
             <div className="loading-spinner"></div>
-            <span className="text-white ml-4">Gönderiler yükleniyor...</span>
+            <span className="text-white ml-4">Loading posts...</span>
           </div>
         ) : (
           <div className="space-y-8 max-w-4xl mx-auto">
@@ -231,7 +232,7 @@ export default function FeedPage() {
                     onClick={() => handleMessage(post.id)}
                     className={`transition-colors ${isConnected ? 'text-blue-400 hover:text-blue-300' : 'text-gray-500 cursor-not-allowed'}`}
                   >
-                    💬 Mesaj Gönder
+                    💬 Send Message
                   </button>
                 </div>
               </div>
@@ -241,4 +242,5 @@ export default function FeedPage() {
       </div>
     </div>
   );
-} 
+}
+```
